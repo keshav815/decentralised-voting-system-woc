@@ -71,25 +71,6 @@
       });
   }
 </script>
-
-<!-- <div class="flex justify-center items-center h-screen">
-    {#if $user}
-        <p>Welcome, {$user.name}! Your email is {$user.email}.</p>
-        <Button on:click={logOut}>Logout</Button>
-    {:else}
-        <p>You are not logged in.</p>
-    {/if}
-</div> -->
-
-<!--
-    Voting topics ->
-    - Information
-    - Status
-    - Name
-
-    - 5 topics
-    - Search Topics(extra)
--->
 <!--Navbar-->
 <div
   class="navbar bg-neutral flex justify-between max-md:justify-start max-md:space-x-16"
@@ -112,9 +93,9 @@
       <div class="card-body">
         <h2 class="card-title">Hii {$user.name}!</h2>
         <p class="text-accent">
-          Department: Mechanical Engineering <br />
+          Department: Civil Engineering <br />
           Semester: 5th <br />
-          Clubs: Photography, Nature, Cyberlabs
+          Clubs: FotoFreaks, FFI, Cyberlabs <br>
         </p>
         <div class="card-actions justify-end">
           <a href="#topic" class="btn btn-primary">Explore</a>
@@ -128,7 +109,7 @@
       <!--Topic Cards-->
       <div class={cardStyle}>
         <div class="card-body">
-          <h2 class="card-title">Photography Club</h2>
+          <h2 class="card-title">FotoFreaks</h2>
           <p>
             Join us for the annual college photography club elections! Cast your
             vote to choose our next leaders, who will guide us in exploring the
@@ -143,11 +124,10 @@
       </div>
       <div class={cardStyle}>
         <div class="card-body">
-          <h2 class="card-title">Nature Club</h2>
+          <h2 class="card-title">Fastforward India</h2>
           <p>
-            Join us for the annual Nature Club elections! Cast your vote to
-            choose our next leaders, who will guide us in exploring and
-            preserving the beauty of nature in the coming year.
+            Join us for the annual FFI Club elections! Cast your vote to
+            choose our next leaders, who will guide us on working for health and education of our brothers and sisters who are unprivilaged.
           </p>
           <div class="card-actions justify-end">
             <button class="btn btn-primary" on:click={toggleVote}
@@ -175,11 +155,11 @@
 
       <div class={cardStyle}>
         <div class="card-body">
-          <h2 class="card-title">Music Club</h2>
+          <h2 class="card-title">Lights Camera ISM</h2>
           <p>
-            Join us for the annual Music Club elections! Cast your vote to
+            Join us for the annual Lights Camera ISM Club elections! Cast your vote to
             choose our next leaders, who will guide us in exploring the world of
-            music and sound in the coming year.
+            cinematography in the coming year.
           </p>
           <div class="card-actions justify-end">
             <button class="btn btn-primary" on:click={toggleVote}
@@ -191,9 +171,9 @@
 
       <div class={cardStyle}>
         <div class="card-body">
-          <h2 class="card-title">Athletics Club</h2>
+          <h2 class="card-title">Students' Gymkhana IIT(ISM)</h2>
           <p>
-            Join us for the annual Athletics Club elections! Cast your vote to
+            Join us for the annual Students' Gymkhana Club elections! Cast your vote to
             choose our next leaders, who will guide us in promoting fitness and
             sportsmanship in the coming year.
           </p>
@@ -216,7 +196,7 @@
         <span class="text-primary text-xl">Election for the Club President</span
         ><br />
         <span class="text-lg"
-          >Candidates: Selmon Bhoi, Bhupendra Jogi, Dank Memer Shukla</span
+          >Candidates: Hemaa, Ramesh Kumar, Rakesh Agarwal, Bhumi Srivastav </span
         >
       </p>
       <div class="dropdown dropdown-{dropDown}">
@@ -227,14 +207,17 @@
           tabindex="0"
           class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
         >
-          <button on:click={() => selectCandidate("Selmon Bhoi")}
-            >Selmon Bhoi</button
+          <button on:click={() => selectCandidate("Hemaa")}
+            >Hemaa</button
           >
-          <button on:click={() => selectCandidate("Bhupendra Jogi")}
-            >Bhupendra Jogi</button
+          <button on:click={() => selectCandidate("Ramesh Kumar")}
+            >Ramesh Kumar</button
           >
-          <button on:click={() => selectCandidate("Dank Memer Shukla")}
-            >Dank Memer Shukla</button
+          <button on:click={() => selectCandidate("Rakesh Agarwal")}
+            >Rakesh Agarwal</button
+          >
+          <button on:click={() => selectCandidate("Bhumi Srivastav")}
+            >Bhumi Srivastav</button
           >
         </ul>
       </div>
@@ -245,5 +228,3 @@
   </div>
   {/if}
 {/if}
-
-
