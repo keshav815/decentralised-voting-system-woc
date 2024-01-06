@@ -196,7 +196,7 @@
         <span class="text-primary text-xl">Election for the Club President</span
         ><br />
         <span class="text-lg"
-          >Candidates: Hemaa, Ramesh Kumar, Rakesh Agarwal, Bhumi Srivastav </span
+          >Candidates: Hema M, Ramesh Kumar, Rakesh Agarwal, Bhumi Srivastav </span
         >
       </p>
       <div class="dropdown dropdown-{dropDown}">
@@ -208,7 +208,7 @@
           class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
         >
           <button on:click={() => selectCandidate("Hemaa")}
-            >Hemaa</button
+            >Hema M</button
           >
           <button on:click={() => selectCandidate("Ramesh Kumar")}
             >Ramesh Kumar</button
