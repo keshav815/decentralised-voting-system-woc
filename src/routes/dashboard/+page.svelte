@@ -211,7 +211,7 @@
             >Hema M</button
           >
           <button on:click={() => selectCandidate("Ramesh Kumar")}
-            >Ramesh Kumar</button
+            >Kumar Daksh</button
           >
           <button on:click={() => selectCandidate("Rakesh Agarwal")}
             >Rakesh Agarwal</button
