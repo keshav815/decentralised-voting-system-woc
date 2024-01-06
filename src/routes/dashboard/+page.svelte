@@ -207,10 +207,10 @@
           tabindex="0"
           class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
         >
-          <button on:click={() => selectCandidate("Hemaa")}
+          <button on:click={() => selectCandidate("Hema M")}
             >Hema M</button
           >
-          <button on:click={() => selectCandidate("Ramesh Kumar")}
+          <button on:click={() => selectCandidate("Kumar Daksh")}
             >Kumar Daksh</button
           >
           <button on:click={() => selectCandidate("Rakesh Agarwal")}
