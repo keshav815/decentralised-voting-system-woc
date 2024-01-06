@@ -196,7 +196,7 @@
         <span class="text-primary text-xl">Election for the Club President</span
         ><br />
         <span class="text-lg"
-          >Candidates: Hema M, Ramesh Kumar, Rakesh Agarwal, Bhumi Srivastav </span
+          >Candidates: Hema M, Kumar Daksh, Rakesh Agarwal, Bhumi Srivastav </span
         >
       </p>
       <div class="dropdown dropdown-{dropDown}">
